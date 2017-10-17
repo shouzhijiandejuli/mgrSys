@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head th:include="include :: header"></head>
+<body class="gray-bg">
+	<div class="wrapper wrapper-content animated fadeInRight">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="ibox float-e-margins">
+					<div class="ibox-content">
+						<form class="form-horizontal m-t" id="signupForm">
+							<div class="form-group">	
+								<label class="col-sm-3 control-label">：</label>
+								<div class="col-sm-8">
+									<input id="uuid" name="uuid" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">商品名称：</label>
+								<div class="col-sm-8">
+									<input id="name" name="name" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">供应商ID：</label>
+								<div class="col-sm-8">
+									<input id="providerId" name="providerId" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">图片地址：</label>
+								<div class="col-sm-8">
+									<input id="imgUrl" name="imgUrl" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">规格：</label>
+								<div class="col-sm-8">
+									<input id="specification" name="specification" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">文字说明：</label>
+								<div class="col-sm-8">
+									<input id="summary" name="summary" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">当前商品报价：</label>
+								<div class="col-sm-8">
+									<input id="price" name="price" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">：</label>
+								<div class="col-sm-8">
+									<input id="isRemain" name="isRemain" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">剩余数量：</label>
+								<div class="col-sm-8">
+									<input id="remain" name="remain" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">发布过的库存：</label>
+								<div class="col-sm-8">
+									<input id="stocknum" name="stocknum" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">生产日期：</label>
+								<div class="col-sm-8">
+									<input id="productionDate" name="productionDate" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">出油率 1：极少 2：较少 3：较多：</label>
+								<div class="col-sm-8">
+									<input id="oilRate" name="oilRate" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">白皮率 1：极少 2：较少 3：较多：</label>
+								<div class="col-sm-8">
+									<input id="whiteRate" name="whiteRate" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">外观程度 1：极好 2：较好 3：一般：</label>
+								<div class="col-sm-8">
+									<input id="appearanceDegree" name="appearanceDegree" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">解冻前件重(kg)：</label>
+								<div class="col-sm-8">
+									<input id="beforeThawing" name="beforeThawing" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">解冻后件重(kg)：</label>
+								<div class="col-sm-8">
+									<input id="afterThawing" name="afterThawing" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">解冻后条数/件：</label>
+								<div class="col-sm-8">
+									<input id="thawedNum" name="thawedNum" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">验货日期：</label>
+								<div class="col-sm-8">
+									<input id="inspectionDate" name="inspectionDate" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">验货人：</label>
+								<div class="col-sm-8">
+									<input id="examiner" name="examiner" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">上架：Y 下架：N：</label>
+								<div class="col-sm-8">
+									<input id="isOnline" name="isOnline" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">创建时间：</label>
+								<div class="col-sm-8">
+									<input id="createTime" name="createTime" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">修改时间：</label>
+								<div class="col-sm-8">
+									<input id="modifyTime" name="modifyTime" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">发布时间：</label>
+								<div class="col-sm-8">
+									<input id="publishTime" name="publishTime" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">是否发布：</label>
+								<div class="col-sm-8">
+									<input id="publishStatus" name="publishStatus" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">一级分类id：</label>
+								<div class="col-sm-8">
+									<input id="commodityTypeOne" name="commodityTypeOne" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">二级分类id：</label>
+								<div class="col-sm-8">
+									<input id="commodityTypeTwo" name="commodityTypeTwo" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">货源：</label>
+								<div class="col-sm-8">
+									<input id="produceArea" name="produceArea" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">1=>正常  2=>禁用：</label>
+								<div class="col-sm-8">
+									<input id="status" name="status" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">N=>正常 Y=>删除：</label>
+								<div class="col-sm-8">
+									<input id="isDelete" name="isDelete" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">运营人员1：</label>
+								<div class="col-sm-8">
+									<input id="opOne" name="opOne" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">运营人员1电话：</label>
+								<div class="col-sm-8">
+									<input id="opOneTel" name="opOneTel" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">业务员1的ID，与业务员表ID关联：</label>
+								<div class="col-sm-8">
+									<input id="opOneId" name="opOneId" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">运营人员2：</label>
+								<div class="col-sm-8">
+									<input id="opTwo" name="opTwo" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">运营人员2电话：</label>
+								<div class="col-sm-8">
+									<input id="opTwoTel" name="opTwoTel" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">业务员2的ID，与业务员表ID关联：</label>
+								<div class="col-sm-8">
+									<input id="opTwoId" name="opTwoId" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">商品编号：</label>
+								<div class="col-sm-8">
+									<input id="code" name="code" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">审核状态（1:待审核，2:审核通过，3:审核未通过）：</label>
+								<div class="col-sm-8">
+									<input id="checkStatus" name="checkStatus" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">厂商：</label>
+								<div class="col-sm-8">
+									<input id="manufacturerId" name="manufacturerId" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">捕捞方式字段：</label>
+								<div class="col-sm-8">
+									<input id="fishingStyle" name="fishingStyle" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">是否支持在线支付：</label>
+								<div class="col-sm-8">
+									<input id="isAllowOnlinePay" name="isAllowOnlinePay" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">件重（kg/件）：</label>
+								<div class="col-sm-8">
+									<input id="weight" name="weight" class="form-control" type="text">
+								</div>
+							</div>
+														<div class="form-group">	
+								<label class="col-sm-3 control-label">下架原因：</label>
+								<div class="col-sm-8">
+									<input id="soldOutCause" name="soldOutCause" class="form-control" type="text">
+								</div>
+							</div>
+																					<div class="form-group">
+								<div class="col-sm-8 col-sm-offset-3">
+									<button type="submit" class="btn btn-primary">提交</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+	</div>
+	</div>
+	<div th:include="include::footer"></div>
+	<script type="text/javascript" src="/js/appjs/commodity/add.js">
+	</script>
+</body>
+</html>
